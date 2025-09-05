@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Humannnweb - Seram</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      overflow: hidden;
+      background: linear-gradient(-45deg, #0a0a0a, #2a0000, #1a0000, #0a0a0a);
+      animation: bgShift 20s ease infinite;
+      color: white;
+    }
+
+    @keyframes bgShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .stars {
+      position: fixed;
+      top:0; left:0; right:0; bottom:0;
+      z-index: -1;
+      background: transparent url('https://www.transparenttextures.com/patterns/dark-mosaic.png') repeat;
+      opacity: 0.2;
+      animation: moveStars 100s linear infinite;
+    }
+
+    @keyframes moveStars {
+      from { background-position: 0 0; }
+      to { background-position: 5000px 5000px; }
+    }
+
+    .container {
+      background: rgba(10,0,0,0.6);
+      backdrop-filter: blur(4px);
+      color: #ffdddd;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 600px;
+      margin: 50px auto;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(255,0,0,0.5);
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      color: #ff3333;
+      text-shadow: 0 0 10px #ff0000, 0 0 20px #aa0000;
+      animation: shake 0.8s infinite, blink 1.5s step-start infinite;
+    }
+
+    @keyframes shake {
+      0%,100%{transform:translateX(0);}
+      20%{transform:translateX(-3px);}
+      40%{transform:translateX(3px);}
+      60%{transform:translateX(-3px);}
+      80%{transform:translateX(3px);}
+    }
+
+    @keyframes blink {50%{opacity:0.4;}}
+
+    .produk {
+      margin: 15px 0;
+      padding: 15px;
+      border: 1px solid #ff0000;
+      border-radius: 10px;
+      background: rgba(50,0,0,0.3);
+      position: relative;
+      transition: 0.3s;
+    }
+
+    .produk:hover {
+      background: rgba(80,0,0,0.5);
+      transform: scale(1.02);
+      box-shadow: 0 0 15px #ff0000;
+    }
+
+    .badge {
+      position: absolute;
+      top: 10px;
+      right: -30px;
+      background: #8b0000;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 5px 40px;
+      transform: rotate(45deg);
+      box-shadow: 0 0 10px #ff0000;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% {transform: scale(1); opacity: 1;}
+      50% {transform: scale(1.1); opacity: 0.6;}
+      100% {transform: scale(1); opacity: 1;}
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 5px;
+      padding: 10px 18px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .btn-user { background: #5500aa; color: white; }
+    .btn-user:hover { background: #330077; }
+    .btn-channel { background: #aa0000; color: white; }
+    .btn-channel:hover { background: #770000; }
+    .btn-beli { background: #00aa33; color: black; animation: pulse 1.2s infinite; box-shadow: 0 0 10px #00ff33; }
+    .btn-beli:hover { background: #007722; color: white; }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="container">
+    <h1>All PRODUK @Humannnceko</h1>
+    
+    <div class="produk">
+      <span class="badge">🔥 PROMO</span>
+      <h2>SCRIPT BUG OTAX</h2>
+      <p>FULL UPDATE 45k</p>
+      <p>NO UPDATE 20k</p>
+      <p>RESELLER 55k</p>
+      <a href="https://t.me/Humannnceko" class="btn btn-user">👤 Chat Admin</a>
+      <a href="https://t.me/Humannnch" class="btn btn-channel">📢 Join Channel</a>
+      <a href="https://t.me/Humannnceko" class="btn btn-beli">🛒 Beli Sekarang</a>
+    </div>
+
+    <div class="produk">
+      <span class="badge">🔥 PROMO</span>
+      <h2>SCRIPT BUG MANCHESTER</h2>
+      <p>FULL UPDATE 20k</p>
+      <p>NO UPDATE 10k</p>
+      <p>RESELLER 25k</p>
+      <a href="https://t.me/Humannnceko" class="btn btn-user">👤 Chat Admin</a>
+      <a href="https://t.me/Humannnch" class="btn btn-channel">📢 Join Channel</a>
+      <a href="https://t.me/Humannnceko" class="btn btn-beli">🛒 Beli Sekarang</a>
+    </div>
+  </div>
+</body>
+</html>
